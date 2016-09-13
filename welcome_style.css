@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #000;
+}
+.fly-in{
+  list-style: none;
+  position: absolute;
+  left: 30%;
+  right: 20%;
+  top: 40%;
+  transform: translateX(-10%) translateY(-20%);
+}
+.fly-in li{
+  display: inline-block;
+  margin-right: 50px;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 4em;
+  color: #fff;
+  opacity: 1;
+  transition: all 2.5s ease;
+
+}
+.fly-in li:last-child{
+  margin-right: 0;
+}
+.fly-in.hidden li{
+  opacity: 0;
+}
+.fly-in.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.fly-in.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+.fly-in.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+.fly-in.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+.fly-in.hidden li:nth-child(8) { transform: translateX(40px) translateY(100px); }
+.fly-in.hidden li:nth-child(9) { transform: translateX(-100px) translateY(150px); }
+
+.mainFooter {
+	width: 100%;
+	float: left;
+	margin-top: 95%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: #666;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #FFF;
+}
+
+.mainFooter p {
+	width: 91%;
+	margin: 2% auto;
+}
