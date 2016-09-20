@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CONTACT ME</title>
+  <meta charset="utf-8"/>
+  <link rel = "stylesheet" href="contact_style.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial.scale=1.0">
+
+</head>
+<body class="first_class">
+  <header class="mainheader">
+    <h1>Akshay M. Deo</h1>
+    <h2>M.S. in Computer Science from California State University,Chico</h2>
+    <div style="text-align:center;">
+    <span id="typed" style="white-space:pre;"class="element"></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bower_components/typed.js/js/typed.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Front End Developer","Back End Developer",
+             "Software Engineer","Full Stack Engineer",],
+            typeSpeed: 5
+        });
+    });
+</script>
+    <nav><ul>
+      <li><a href = "index.html">Home</a><li>
+      <li><a href = "resume.html">Resume</a><li>
+      <li><a href = "projects.html">Projects</a><li>
+      <li class="active"><a href = "contact.html">Contact</a><li>
+    </ul></nav>
+  </header>
+    <form class="contact_me" method="post" action="contact1.php" name="contact">
+      <h1 style="align:center">Looking forward to hear
+        from you!</h1>
+      <div>
+        <input type="text" name="name" placeholder="NAME"/>
+      </div>
+      <div>
+        <input type="email" name="email" placeholder="EMAIL"/>
+      </div>
+      <div>
+        <input type="text" name="phone" placeholder="PHONE"/>
+      </div>
+      <div>
+        <textarea name="message" placeholder="MESSAGE" id="comments" rows="15"
+        cols="50"></textarea>
+      </div>
+
+    <div class="submit1">
+      <input type="submit" name="send" placeholder="SEND"/>
+      <input type="reset" name="reset" placeholder="RESET"/>
+    </div>
+    </form>
+    <footer class="mainFooter">
+      <p>Copyrights © Reserved by: <a href="https://www.deoakshay.com">
+          Akshay Deo.</a>  <a href="https://www.linkedin.com/in/akshaydeo27">
+            <img src="img/li.png"border="0" id="li"></a>
+            <a href="https://github.com/deoakshay" height="20"><img src="img/
+              gi.png" border="0" id="gi"></a></p>
+    </footer>
+
+</body>
+</html>
